@@ -17,7 +17,7 @@ class Student extends Person {
     super(name, age);
   }
 	study(){
-		return this.name + "is studying";
+		return this.name + " is studying";
 	}
 }
 
@@ -26,7 +26,7 @@ constructor(name, age) {
     super(name, age);
   }
 	teach(){
-		return this.name + "is teaching";
+		return this.name + " is teaching";
 	}
 }
 
@@ -34,6 +34,7 @@ constructor(name, age) {
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
+
 let john = new Student("John", 20);
 console.log(john.study()); // Output: John is studying
 
