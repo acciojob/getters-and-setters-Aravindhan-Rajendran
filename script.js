@@ -34,14 +34,17 @@ constructor(name, age) {
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
-const person = new Person("John", 25);
-console.log(person.name); // Output: John
+let john = new Student("John", 20);
+console.log(john.study()); // Output: John is studying
 
-person.age = 30;
-console.log(person.age); // Output: 30
+let alice = new Student("Alice", 22);
+console.log(alice.study()); // Output: Alice is studying
 
-const student = new Student("Alice", 22);
-student.study(); // Output: Alice is studying
+john = new Teacher("John", 30);
+console.log(john.teach()); // Output: John is teaching
 
-const teacher = new Teacher("Bob", 40);
-teacher.teach(); // Output: Bob is teaching
+alice = new Teacher("Alice", 32);
+console.log(alice.teach()); // Output: Alice is teaching
+
+
+
